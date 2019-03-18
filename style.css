@@ -28,6 +28,9 @@ button {
     border: none;
     cursor: pointer;
 }
+button:focus {
+    outline: none;
+}
 button:disabled {
     color: black;
 }
