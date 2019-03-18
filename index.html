@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VanillaJS Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js" async></script>
+</head>
+<body>
+    <audio id="beep" src="http://freesound.org/data/previews/250/250629_4486188-lq.mp3"></audio>
+    <div class="main d-flex justify-content-center align-items-center">
+        <div class="mainclock d-flex flex-column">
+            <div class="maintitle d-flex justify-content-center">
+                JS Pomodoro Clock
+            </div>
+            <div class="clock-parts d-flex flex-sm-row flex-column justify-content-center">
+                <div class="break d-flex flex-column">
+                    <div id="break-label" class="break-title text-center">Break Length</div>
+                    <div class="break-buttons d-flex flex-sm-column flex-row justify-content-center align-items-center">
+                        <button id="break-increment"><i class="fas fa-arrow-alt-circle-up"></i></button>
+                        <div id="break-length" class="break-buttons-text">5</div>
+                        <button id="break-decrement"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                    </div>
+                </div>
+                <div class="session d-flex justify-content-center flex-column">
+                    <div id="timer-label" class="session-title text-center">Session</div>
+                    <div id="time-left" class="session-clock text-center"><span id="mm">25</span>:<span id="ss">00</span></div>
+                    <div class="controls d-flex flex-row justify-content-around">
+                        <button id="start_stop" class="start icons"><i class="fas fa-play-circle"></i></button>
+                        <!--<button class="stop icons"><i class="fas fa-pause-circle"></i></button>-->
+                        <button id="reset" class="icons"><i class="fas fa-redo"></i></button>
+                    </div>
+                </div>
+                <div class="session-length d-flex flex-column">
+                    <div id="session-label" class="session-length-title text-center">Session Length</div>
+                    <div class="session-length-buttons d-flex flex-sm-column flex-row justify-content-center align-items-center">
+                        <button id="session-increment"><i class="fas fa-arrow-alt-circle-up"></i></button>
+                        <div id="session-length" class="session-length-buttons-text">25</div>
+                        <button id="session-decrement"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
