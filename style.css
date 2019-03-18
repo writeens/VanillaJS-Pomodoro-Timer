@@ -1,0 +1,88 @@
+:root {
+    --margin: rgba(0, 0, 0, 0.473);
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Comic Sans MS";
+    font-size: 1.2rem;
+    background-color: rgba(247, 135, 7, 0.76);
+}
+.red {
+    border: 1px solid red;
+}
+.mainclock {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(12, 122, 231, 0.863);
+    border-radius: 0.8rem;
+    height: auto;
+}
+.maintitle {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--margin);
+}
+button {
+    width: 5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button:disabled {
+    color: black;
+}
+i {
+    font-size: 2rem;
+}
+.clock-parts {
+}
+.break {
+    padding: 1rem;
+    width: 100%;
+}
+.break-title {
+    padding: 0.5rem;
+}
+.break-buttons {
+}
+.break-buttons-text {
+    font-size: 2rem;
+    font-family: monospace;
+}
+.session {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-left: 1px solid var(--margin);
+    border-right: 1px solid var(--margin);
+    width: 100%;
+}
+.session-title {
+    padding: 0.5rem;
+}
+.session-clock {
+    padding: 0.5rem;
+    font-size: 5rem;
+    font-family: monospace;
+}
+.icons {
+    width: 3rem;
+}
+.session-length {
+    padding: 1rem;
+    width: 100%;
+}
+.session-length-title {
+    padding: 0.5rem;
+}
+.session-length-buttons {
+}
+.session-length-buttons-text {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+@media (max-width: 570px) {
+    .session {
+        border-bottom: 1px solid var(--margin);
+        border-top: 1px solid var(--margin);
+    }
+}
